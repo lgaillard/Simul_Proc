@@ -22,4 +22,14 @@ libsimul.a
 *.x86_64
 *.hex
 
+asm
+test_simul
+dump.bin
+
 *~
+*.opensdf
+*.sdf
+*.sln
+*.suo
+*.vcxproj
+*.vcxproj.filters
