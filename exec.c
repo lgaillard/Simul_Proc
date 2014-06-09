@@ -1,13 +1,6 @@
-#ifndef _EXEC_H_
-#define _EXEC_H_
-
-/*!
- * \file exec.h
-
- * \brief Exécution d'une instruction.
- */
-
+#include <stdio.h>
 #include "machine.h"
+#include "instruction.h"
 
 //! Décodage et exécution d'une instruction
 /*!
@@ -15,7 +8,9 @@
  * \param instr l'instruction à exécuter
  * \return faux après l'exécution de \c HALT ; vrai sinon
  */
-bool decode_execute(Machine *pmach, Instruction instr);
+bool decode_execute(Machine *pmach, Instruction instr) {
+	return true;
+}
 
 //! Trace de l'exécution
 /*!
@@ -26,6 +21,9 @@ bool decode_execute(Machine *pmach, Instruction instr);
  * \param instr l'instruction à exécuter
  * \param addr son adresse
  */
-void trace(const char *msg, Machine *pmach, Instruction instr, unsigned addr);
+void trace(const char *msg, Machine *pmach, Instruction instr, unsigned addr){
+	printf("TRACE: %s: ", msg);
+	print_instruction(instr, addr);
+	printf("\n");
+}
 
-#endif
