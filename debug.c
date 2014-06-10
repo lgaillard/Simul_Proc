@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include "debug.h"
 
-#define ANSWSIZE 32767
+#define ANSWSIZE 10
 
 //! Affiche la liste des commandes disponibles en Debug
 void help() {
-	printf("Available commands:\n");
-	printf("\th\thelp\n");
-	printf("\tc\tcontinue (exit interactive debug mode)\n");
-	printf("\ts\tstep by step (next instuction)\n");
-	printf("\tRET\tstep by step (next instuction)\n");
-	printf("\tr\tprint registers\n");
-	printf("\td\tprint data memory\n");
-	printf("\tt\tprint text (prograrm) memory\n");
-	printf("\tp\tprint text (prograrm) memory\n");
-	printf("\tm\tprint registers and data memory\n");
+	puts("Available commands:");
+	puts("\th\thelp");
+	puts("\tc\tcontinue (exit interactive debug mode)");
+	puts("\ts\tstep by step (next instuction)");
+	puts("\tRET\tstep by step (next instuction)");
+	puts("\tr\tprint registers");
+	puts("\td\tprint data memory");
+	puts("\tt\tprint text (prograrm) memory");
+	puts("\tp\tprint text (prograrm) memory");
+	puts("\tm\tprint registers and data memory");
 }
 
 //! Dialogue de mise au point interactive pour l'instruction courante.
@@ -32,7 +32,7 @@ bool debug_ask(Machine *pmach) {
 	char answer[ANSWSIZE];
 	while (true) {
 		printf("DEBUG? ");
-		fflush(stdin);
+		fflush(stdout);
 		fgets(answer, ANSWSIZE, stdin);
 		switch (answer[0]) {
 		case 'h':
