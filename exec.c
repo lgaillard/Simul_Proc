@@ -48,7 +48,7 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 	
 	case ADD :
 		if (instr.instr_generic._immediate) 
-			pmach->_registers[instr.instr_generic._regcond]+=insrt.instr_immediate._value;
+			pmach->_registers[instr.instr_generic._regcond]+=instr.instr_immediate._value;
 		else if (instr.instr_indexed._indexed)
 			pmach->_registers[instr.instr_generic._regcond]+=pmach->_data[pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexed._offset];
 		else
@@ -90,7 +90,7 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 		
 		if (cond == NC || cond == GT) {
 			if (instr.instr_generic._indexed)
-				pmach->_pc=pmach->pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexed._offset;
+				pmach->_pc=pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexed._offset;
 			else
 				pmach->_pc=instr.instr_absolute._address;
 			return 1;
@@ -114,11 +114,11 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 	
 	case PUSH : 
 		if (instr.instr_generic._immediate) 
-			pmach->_data[pmach->sp] = insrt.instr_immediate._value;
+			pmach->_data[pmach->_sp] = insrt.instr_immediate._value;
 		else if (instr.instr_indexed._indexed)
-			pmach->_data[pmach->sp]=pmach->_data[pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexed._offset];
+			pmach->_data[pmach->_sp]=pmach->_data[pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexed._offset];
 		else
-			pmach->_data[pmach->sp]=pmach->_data[instr.instr_absolute._address];
+			pmach->_data[pmach->_sp]=pmach->_data[instr.instr_absolute._address];
 		pmach->_sp --;
 		return 1;
 	
@@ -129,13 +129,17 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 		pmach->_sp ++;
 		
 		if (instr.instr_indexed._indexed)
-			pmach->_data[pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexed._offset]=pmach->_data[pmach->sp];
+			pmach->_data[pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexed._offset]=pmach->_data[pmach->_sp];
 		else
-			pmach->_data[instr.instr_absolute._address]=pmach->_data[pmach->sp];
+			pmach->_data[instr.instr_absolute._address]=pmach->_data[pmach->_sp];
 		return 1;
 		
 	case HALT: //HALT
 		warning(WARN_HALT,instr.instr_absolute._address);
+		return 0;
+		
+	default :
+		error(ERR_IMMEDIATE,instr.instr_absolute._address);
 		return 0;
 	}
 }
