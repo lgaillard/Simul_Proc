@@ -156,6 +156,6 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 void trace(const char *msg, Machine *pmach, Instruction instr, unsigned addr){
 	printf("TRACE: %s: ", msg);
 	print_instruction(instr, addr);
-	printf("\n");
+	putchar('\n');
 }
 
