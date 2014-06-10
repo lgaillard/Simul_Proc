@@ -13,7 +13,7 @@
 bool decode_execute(Machine *pmach, Instruction instr) {
 	switch (instr.instr_generic._cop) {
 	case ILLOP : 
-		error(ERR_ILLEGAL,instr.instr_absolute._address);
+		error(ERR_ILLEGAL,pmach->_pc);
 		return 1;
 	
 	case NOP : 
@@ -39,7 +39,7 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 	
 	case STORE : 
 		if (instr.instr_generic._immediate) 
-			error(ERR_IMMEDIATE,instr.instr_absolute._address);
+			error(ERR_IMMEDIATE,pmach->_pc);
 		else if (instr.instr_generic._indexed)
 			pmach->_data[pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexed._offset]=pmach->_registers[instr.instr_generic._regcond];
 		else
@@ -84,7 +84,7 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 		
 	case BRANCH : 
 		if (instr.instr_generic._immediate) 
-			error(ERR_IMMEDIATE,instr.instr_absolute._address);
+			error(ERR_IMMEDIATE,pmach->_pc);
 		
 		/*Condition cond = instr.instr_generic._regcond.condition;
 		
@@ -96,11 +96,11 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 			return 1;
 		/*}
 		else
-			error(ERR_CONDITION,instr.instr_absolute._address);*/
+			error(ERR_CONDITION,pmach->_pc);*/
 		
 	case CALL :
 		if (instr.instr_generic._immediate) 
-			error(ERR_IMMEDIATE,instr.instr_absolute._address);
+			error(ERR_IMMEDIATE,pmach->_pc);
 		else if (instr.instr_generic._indexed)
 			pmach->_data[pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexed._offset]=pmach->_registers[instr.instr_generic._regcond];
 		else
@@ -125,7 +125,7 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 	
 	case POP:
 		if (instr.instr_generic._immediate) 
-			error(ERR_IMMEDIATE,instr.instr_absolute._address);
+			error(ERR_IMMEDIATE,pmach->_pc);
 		pmach->_sp ++;
 		
 		if (instr.instr_indexed._indexed)
@@ -135,11 +135,11 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 		return 1;
 		
 	case HALT: //HALT
-		warning(WARN_HALT,instr.instr_absolute._address);
+		warning(WARN_HALT,pmach->_pc);
 		return 0;
 		
 	default :
-		error(ERR_IMMEDIATE,instr.instr_absolute._address);
+		error(ERR_IMMEDIATE,pmach->_pc);
 		return 0;
 	}
 }
