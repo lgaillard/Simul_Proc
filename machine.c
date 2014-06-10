@@ -143,9 +143,9 @@ void print_program(Machine *pmach) {
     for (int i = 0; i < pmach->_textsize; ++i) {
         printf("0x%04x: 0x%08x \t ", i, pmach->_text[i]._raw);
         print_instruction(pmach->_text[i], i);
-        printf("\n");
+        putchar('\n');
     }
-    printf("\n");
+    putchar('\n');
 }
 
 //! Affichage des données du programme
@@ -158,7 +158,7 @@ void print_data(Machine *pmach) {
     printf("*** DATA (size: %u, end = 0x%08x (%u)) ***", pmach->_datasize, pmach->_dataend, pmach->_dataend);
     for (int i = 0; i < pmach->_datasize; ++i) {
         if (i % 3 == 0) printf("\n");
-        printf("0x%04x: 0x%08x %-6d ", i, pmach->_data[i], pmach->_data[i]);
+        printf("0x%04x: 0x%08x %-4d   ", i, pmach->_data[i], pmach->_data[i]);
     }
     printf("\n\n");
 }
@@ -174,7 +174,7 @@ void print_cpu(Machine *pmach) {
     printf("PC:  0x%08x   CC: %c\n", pmach->_pc, cc_names[pmach->_cc]);
     for (int i = 0; i < NREGISTERS; ++i) {
         if (i % 3 == 0) printf("\n");
-        printf("R%02u: 0x%08x %-6d ", i, pmach->_registers[i], pmach->_registers[i]);
+        printf("R%02u: 0x%08x %-4d   ", i, pmach->_registers[i], pmach->_registers[i]);
     }
     printf("\n\n");
 }

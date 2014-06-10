@@ -38,7 +38,7 @@ void print_instruction(Instruction instr, unsigned addr) {
 	Code_Op cop = instr.instr_generic._cop;
 
 	if (cop > LAST_COP)
-		error(ERR_ILLEGAL, addr);
+		error(ERR_UNKNOWN, addr);
 
 	printf("%s ", cop_names[cop]);
 
