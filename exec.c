@@ -66,7 +66,7 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 		
 	case SUB : 
 		if (instr.instr_generic._immediate) 
-			pmach->_registers[instr.instr_generic._regcond]-=insrt.instr_immediate._value;
+			pmach->_registers[instr.instr_generic._regcond]-=instr.instr_immediate._value;
 		else if (instr.instr_generic._indexed)
 			pmach->_registers[instr.instr_generic._regcond]-=pmach->_data[pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexed._offset];
 		else
@@ -86,17 +86,17 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 		if (instr.instr_generic._immediate) 
 			error(ERR_IMMEDIATE,instr.instr_absolute._address);
 		
-		Condition cond = instr.instr_generic._regcond.condition;
+		/*Condition cond = instr.instr_generic._regcond.condition;
 		
-		if (cond == NC || cond == GT) {
+		if (cond == NC || cond == GT) {*/
 			if (instr.instr_generic._indexed)
 				pmach->_pc=pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexed._offset;
 			else
 				pmach->_pc=instr.instr_absolute._address;
 			return 1;
-		}
+		/*}
 		else
-			error(ERR_CONDITION,instr.instr_absolute._address);
+			error(ERR_CONDITION,instr.instr_absolute._address);*/
 		
 	case CALL :
 		if (instr.instr_generic._immediate) 
@@ -114,7 +114,7 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 	
 	case PUSH : 
 		if (instr.instr_generic._immediate) 
-			pmach->_data[pmach->_sp] = insrt.instr_immediate._value;
+			pmach->_data[pmach->_sp] = instr.instr_immediate._value;
 		else if (instr.instr_indexed._indexed)
 			pmach->_data[pmach->_sp]=pmach->_data[pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexed._offset];
 		else
