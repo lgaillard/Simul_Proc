@@ -24,6 +24,15 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 			pmach->_registers[instr._regcond]=pmach->_data[pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexedt._offset];
 		else
 			pmach->_registers[instr._regcond]=pmach->_data[instr.instr_absolute._address];
+			
+		if (pmach->_registers[instr._regcond] > 0)
+			pmach->_cc = CC_P;
+		else if (pmach->_registers[instr._regcond] == 0)
+			pmach->_cc = CC_Z;
+		else if (pmach->_registers[instr._regcond] < 0)
+			pmach->_cc = CC_N;
+		else 
+			pmach->_cc = CC_U;
 		return 1;
 	
 	case STORE : 
