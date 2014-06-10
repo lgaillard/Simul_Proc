@@ -145,7 +145,7 @@ void print_program(Machine *pmach) {
         print_instruction(pmach->_text[i], i);
         printf("\n");
     }
-    printf("\n");
+    putchar('\n');
 }
 
 //! Affichage des données du programme
