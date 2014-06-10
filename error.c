@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include <stdio.h>
+#include "error.h"
 
 const char *error_names[] = {
     "No error",
