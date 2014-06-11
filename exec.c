@@ -101,11 +101,20 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 	case CALL :
 		if (instr.instr_generic._immediate) 
 			error(ERR_IMMEDIATE,pmach->_pc);
-		else if (instr.instr_generic._indexed)
-			pmach->_data[pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexed._offset]=pmach->_registers[instr.instr_generic._regcond];
+		
+		/*Condition cond = instr.instr_generic._regcond.condition;
+		
+		if (cond == NC || cond == GT) {*/
+			pmach->_data[pmach->_sp]= pmach->_pc;
+			pmach->_sp -= 1;
+			if (instr.instr_generic._indexed)
+				pmach->_pc=pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexed._offset;
+			else
+				pmach->_pc=instr.instr_absolute._address;
+			return 1;
+		/*}
 		else
-			pmach->_data[instr.instr_absolute._address]=pmach->_registers[instr.instr_generic._regcond];
-		return 1;
+			error(ERR_CONDITION,pmach->_pc);*/
 	
 	case RET :
 		 pmach->_sp ++;
