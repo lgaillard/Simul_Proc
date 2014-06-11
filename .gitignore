@@ -24,7 +24,7 @@ libsimul.a
 
 asm
 test_simul
-dump.bin
+*.bin
 
 *~
 *.opensdf
