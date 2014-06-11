@@ -86,25 +86,30 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 		if (instr.instr_generic._immediate) 
 			error(ERR_IMMEDIATE,pmach->_pc);
 		
-		/*Condition cond = instr.instr_generic._regcond.condition;
-		
-		if (cond == NC || cond == GT) {*/
+		Condition cond = (Condition) instr.instr_generic._regcond;
+		//Test degeu pour tester C
+		if (cond == NC || ((cond == EQ || cond == GE ||cond == LE)&& pmach->_cc == CC_Z)
+			|| (pmach->_cc == CC_P && (cond == NE || cond == GE ||cond == GT))
+			|| (pmach->_cc == CC_N && (cond == NE || cond == LE ||cond == LT))) {
+
 			if (instr.instr_generic._indexed)
 				pmach->_pc=pmach->_registers[instr.instr_indexed._rindex]+instr.instr_indexed._offset;
 			else
 				pmach->_pc=instr.instr_absolute._address;
 			return 1;
-		/*}
+		}
 		else
-			error(ERR_CONDITION,pmach->_pc);*/
+			error(ERR_CONDITION,pmach->_pc);
 		
 	case CALL :
 		if (instr.instr_generic._immediate) 
 			error(ERR_IMMEDIATE,pmach->_pc);
 		
-		/*Condition cond = instr.instr_generic._regcond.condition;
-		
-		if (cond == NC || cond == GT) {*/
+		Condition cond = (Condition) instr.instr_generic._regcond;
+		//Test degeu pour tester C
+		if (cond == NC || ((cond == EQ || cond == GE ||cond == LE)&& pmach->_cc == CC_Z)
+			|| (pmach->_cc == CC_P && (cond == NE || cond == GE ||cond == GT))
+			|| (pmach->_cc == CC_N && (cond == NE || cond == LE ||cond == LT))) {
 			pmach->_data[pmach->_sp]= pmach->_pc;
 			pmach->_sp -= 1;
 			if (instr.instr_generic._indexed)
@@ -112,9 +117,9 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 			else
 				pmach->_pc=instr.instr_absolute._address;
 			return 1;
-		/*}
+		}
 		else
-			error(ERR_CONDITION,pmach->_pc);*/
+			error(ERR_CONDITION,pmach->_pc);
 	
 	case RET :
 		 pmach->_sp ++;
