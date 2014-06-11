@@ -11,6 +11,7 @@
  * \return faux après l'exécution de \c HALT ; vrai sinon
  */
 bool decode_execute(Machine *pmach, Instruction instr) {
+Condition cond;
 	switch (instr.instr_generic._cop) {
 	case ILLOP : 
 		error(ERR_ILLEGAL,pmach->_pc);
@@ -86,7 +87,7 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 		if (instr.instr_generic._immediate) 
 			error(ERR_IMMEDIATE,pmach->_pc);
 		
-		Condition cond = (Condition) instr.instr_generic._regcond;
+		cond = (Condition) instr.instr_generic._regcond;
 		//Test degeu pour tester C
 		if (cond == NC || ((cond == EQ || cond == GE ||cond == LE)&& pmach->_cc == CC_Z)
 			|| (pmach->_cc == CC_P && (cond == NE || cond == GE ||cond == GT))
@@ -105,7 +106,7 @@ bool decode_execute(Machine *pmach, Instruction instr) {
 		if (instr.instr_generic._immediate) 
 			error(ERR_IMMEDIATE,pmach->_pc);
 		
-		Condition cond = (Condition) instr.instr_generic._regcond;
+		cond = (Condition) instr.instr_generic._regcond;
 		//Test degeu pour tester C
 		if (cond == NC || ((cond == EQ || cond == GE ||cond == LE)&& pmach->_cc == CC_Z)
 			|| (pmach->_cc == CC_P && (cond == NE || cond == GE ||cond == GT))
