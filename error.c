@@ -14,7 +14,7 @@ const char *error_names[] = {
 };
 
 const char *warning_names[] = {
-    "HALT",
+    "HALT reached",
 };
 
 
@@ -26,5 +26,5 @@ void error(Error err, unsigned addr){
 
 void warning(Warning warn, unsigned addr){
     assert(warn <= LAST_WARNING);
-    fprintf(stderr, "WARNING: %s reached at 0x%x\n", warning_names[warn], addr);
+    fprintf(stderr, "WARNING: %s at address 0x%x\n", warning_names[warn], addr);
 }
