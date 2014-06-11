@@ -83,7 +83,7 @@ Condition cond;
 			pmach->_cc = CC_U;
 		return 1;
 		
-	case BRANCH : 
+	case BRANCH :
 		if (instr.instr_generic._immediate) 
 			error(ERR_IMMEDIATE,pmach->_pc);
 		
