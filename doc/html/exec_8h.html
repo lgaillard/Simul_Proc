@@ -3,41 +3,52 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.6"/>
 <title>Simulateur du jeu d&#39;instructions d&#39;un processeur simple: Référence du fichier exec.h</title>
+
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+
 </head>
 <body>
-<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="top"><!-- do not remove this div! -->
+
+
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  
+  
   <td style="padding-left: 0.5em;">
    <div id="projectname">Simulateur du jeu d&#39;instructions d&#39;un processeur simple
+   
    </div>
+   
   </td>
+  
+  
+  
  </tr>
  </tbody>
 </table>
 </div>
-<!-- end header part -->
-<!-- Généré par Doxygen 1.8.6 -->
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript" src="dynsections.js"></script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="dirs.html"><span>Répertoires</span></a></li>
     </ul>
   </div>
   <div id="navrow2" class="tabs2">
@@ -46,11 +57,10 @@
       <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
+</div>
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
     </div>
   </div>
   <div id="splitbar" style="-moz-user-select:none;" 
@@ -58,7 +68,7 @@
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('exec_8h.html','');});
+  initNavTree('exec_8h.html','');
 </script>
 <div id="doc-content">
 <div class="header">
@@ -81,29 +91,36 @@ $(document).ready(function(){initNavTree('exec_8h.html','');});
 <map name="exec_8h" id="exec_8h">
 <area shape="rect" id="node2" href="machine_8h.html" title="Description de la structure du processeur et de sa mémoire. " alt="" coords="42,80,123,107"/><area shape="rect" id="node4" href="instruction_8h.html" title="Description du jeu d&#39;instruction. " alt="" coords="79,155,169,181"/></map>
 </div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="exec_8h__dep__incl.png" border="0" usemap="#exec_8hdep" alt=""/></div>
+<map name="exec_8hdep" id="exec_8hdep">
+</map>
+</div>
 </div>
 <p><a href="exec_8h_source.html">Aller au code source de ce fichier.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+<tr><td colspan="2"><h2><a name="func-members"></a>
 Fonctions</h2></td></tr>
-<tr class="memitem:a41471ced34d27777447c2609173af7de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exec_8h.html#a41471ced34d27777447c2609173af7de">decode_execute</a> (<a class="el" href="structMachine.html">Machine</a> *pmach, <a class="el" href="unionInstruction.html">Instruction</a> instr)</td></tr>
-<tr class="memdesc:a41471ced34d27777447c2609173af7de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Décodage et exécution d'une instruction.  <a href="#a41471ced34d27777447c2609173af7de">Plus de détails...</a><br/></td></tr>
-<tr class="separator:a41471ced34d27777447c2609173af7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae353f8fd7ccdbebd6c37fc0f75d12d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exec_8h.html#aae353f8fd7ccdbebd6c37fc0f75d12d3">trace</a> (const char *msg, <a class="el" href="structMachine.html">Machine</a> *pmach, <a class="el" href="unionInstruction.html">Instruction</a> instr, unsigned addr)</td></tr>
-<tr class="memdesc:aae353f8fd7ccdbebd6c37fc0f75d12d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trace de l'exécution.  <a href="#aae353f8fd7ccdbebd6c37fc0f75d12d3">Plus de détails...</a><br/></td></tr>
-<tr class="separator:aae353f8fd7ccdbebd6c37fc0f75d12d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exec_8h.html#a41471ced34d27777447c2609173af7de">decode_execute</a> (<a class="el" href="structMachine.html">Machine</a> *pmach, <a class="el" href="unionInstruction.html">Instruction</a> instr)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Décodage et exécution d'une instruction.  <a href="#a41471ced34d27777447c2609173af7de"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exec_8h.html#aae353f8fd7ccdbebd6c37fc0f75d12d3">trace</a> (const char *msg, <a class="el" href="structMachine.html">Machine</a> *pmach, <a class="el" href="unionInstruction.html">Instruction</a> instr, unsigned addr)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Trace de l'exécution.  <a href="#aae353f8fd7ccdbebd6c37fc0f75d12d3"></a><br/></td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
 <div class="textblock"><p>Exécution d'une instruction. </p>
 
 <p>Définition dans le fichier <a class="el" href="exec_8h_source.html">exec.h</a>.</p>
-</div><h2 class="groupheader">Documentation des fonctions</h2>
-<a class="anchor" id="a41471ced34d27777447c2609173af7de"></a>
+</div><hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a41471ced34d27777447c2609173af7de"></a><!-- doxytag: member="exec.h::decode_execute" ref="a41471ced34d27777447c2609173af7de" args="(Machine *pmach, Instruction instr)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool decode_execute </td>
+          <td class="memname">bool <a class="el" href="exec_8h.html#a41471ced34d27777447c2609173af7de">decode_execute</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structMachine.html">Machine</a> *&#160;</td>
           <td class="paramname"><em>pmach</em>, </td>
@@ -120,26 +137,83 @@ Fonctions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-</div><div class="memdoc">
+</div>
+<div class="memdoc">
 
 <p>Décodage et exécution d'une instruction. </p>
-<dl class="params"><dt>Paramètres</dt><dd>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">pmach</td><td>la machine/programme en cours d'exécution </td></tr>
     <tr><td class="paramname">instr</td><td>l'instruction à exécuter </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Renvoie</dt><dd>faux après l'exécution de <code>HALT</code> ; vrai sinon </dd></dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>faux après l'exécution de <code>HALT</code> ; vrai sinon </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="exec_8c_source.html#l00161">161</a> du fichier <a class="el" href="exec_8c_source.html">exec.c</a>.</p>
+
+<p>Références <a class="el" href="instruction_8h_source.html#l00060">Instruction::_cop</a>, <a class="el" href="machine_8h_source.html#l00082">Machine::_pc</a>, <a class="el" href="instruction_8h_source.html#l00019">ADD</a>, <a class="el" href="instruction_8h_source.html#l00021">BRANCH</a>, <a class="el" href="instruction_8h_source.html#l00022">CALL</a>, <a class="el" href="error_8h_source.html#l00022">ERR_ILLEGAL</a>, <a class="el" href="error_8h_source.html#l00021">ERR_UNKNOWN</a>, <a class="el" href="error_8c_source.html#l00026">error()</a>, <a class="el" href="exec_8c_source.html#l00129">exec_branch()</a>, <a class="el" href="exec_8c_source.html#l00076">exec_transfer()</a>, <a class="el" href="instruction_8h_source.html#l00026">HALT</a>, <a class="el" href="instruction_8h_source.html#l00015">ILLOP</a>, <a class="el" href="unionInstruction.html#a5903d65905a4fd4f8c917ed17d9d9211">Instruction::instr_generic</a>, <a class="el" href="instruction_8h_source.html#l00017">LOAD</a>, <a class="el" href="instruction_8h_source.html#l00016">NOP</a>, <a class="el" href="instruction_8h_source.html#l00025">POP</a>, <a class="el" href="instruction_8h_source.html#l00024">PUSH</a>, <a class="el" href="instruction_8h_source.html#l00023">RET</a>, <a class="el" href="instruction_8h_source.html#l00018">STORE</a>, <a class="el" href="instruction_8h_source.html#l00020">SUB</a>, <a class="el" href="error_8h_source.html#l00040">WARN_HALT</a>, et <a class="el" href="error_8c_source.html#l00037">warning()</a>.</p>
+
+<p>Référencé par <a class="el" href="machine_8c_source.html#l00191">simul()</a>.</p>
+<div class="fragment"><pre class="fragment">                                                       {
+    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> oldpc = pmach-&gt;<a class="code" href="structMachine.html#a1b3345874b1ade4324f16f3e03944675" title="Compteur ordinal.">_pc</a> - 1;
+    <span class="keywordflow">switch</span> (instr.<a class="code" href="unionInstruction.html#a5903d65905a4fd4f8c917ed17d9d9211" title="Format générique : les premiers champs sont communs.">instr_generic</a>.<a class="code" href="unionInstruction.html#a5682ffc6f762bda7a50e41ea9042cb39" title="Code opération.">_cop</a>) {
+    <span class="keywordflow">case</span> <a class="code" href="instruction_8h.html#a5ead9d7413d75b14e895c945daa82de6ad1bcea5caa46727ab4e411cffaa236f2" title="Instruction illégale.">ILLOP</a>:
+        <a class="code" href="error_8c.html#a531bb138b38aef758b45a442aa53938a" title="Affichage d&#39;une erreur et fin du simulateur.">error</a>(<a class="code" href="error_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5aeb345404de9786d0956657072a6c552e" title="Instruction illégale.">ERR_ILLEGAL</a>, oldpc);
+    <span class="keywordflow">case</span> <a class="code" href="instruction_8h.html#a5ead9d7413d75b14e895c945daa82de6aa2fd6bbb0c07e28e835ba595e64df78c" title="Arrêt (normal) du programme.">HALT</a>:
+        <a class="code" href="error_8c.html#aec2872edfc57849ea2557178dc2b2673" title="Affichage d&#39;un avertissement.">warning</a>(<a class="code" href="error_8h.html#af6ea07812363481c623a23ea26fbf8eda5a5baa88988dd74ee8359d6e504c6d77" title="Fin normale du programme (sur HALT)">WARN_HALT</a>, oldpc);
+        <span class="keywordflow">return</span> 0;
+    <span class="keywordflow">case</span> <a class="code" href="instruction_8h.html#a5ead9d7413d75b14e895c945daa82de6af811bef354b292ff0713c50d7652c026" title="Instruction sans effet.">NOP</a>:
+        <span class="keywordflow">break</span>;
+    <span class="keywordflow">case</span> <a class="code" href="instruction_8h.html#a5ead9d7413d75b14e895c945daa82de6a972dbcdf74cff71e20bdcfb53be9c391" title="Chargement d&#39;un registre.">LOAD</a>:
+    <span class="keywordflow">case</span> <a class="code" href="instruction_8h.html#a5ead9d7413d75b14e895c945daa82de6afeb01cb4572ba190cd7932e49446c480" title="Rangement du contenu d&#39;un registre.">STORE</a>:
+    <span class="keywordflow">case</span> <a class="code" href="instruction_8h.html#a5ead9d7413d75b14e895c945daa82de6acfcf145f2788bf340ff3f3098bc54909" title="Addition à un registre.">ADD</a>:
+    <span class="keywordflow">case</span> <a class="code" href="instruction_8h.html#a5ead9d7413d75b14e895c945daa82de6a12b733d4941495e86811fe6ceeeff9da" title="Soustraction d&#39;un registre.">SUB</a>:
+    <span class="keywordflow">case</span> <a class="code" href="instruction_8h.html#a5ead9d7413d75b14e895c945daa82de6ad263caec619c4d99e4684ba0fabd9493" title="Empilement sur la pile d&#39;exécution.">PUSH</a>:
+    <span class="keywordflow">case</span> <a class="code" href="instruction_8h.html#a5ead9d7413d75b14e895c945daa82de6a061dcf4785583d8653942f2d252174fa" title="Dépilement de la pile d&#39;exécution.">POP</a>:
+        <a class="code" href="exec_8c.html#aefc713a8b9010e66c4ee512e8cecc5f5" title="Décodage et exécution des instructions de manipulation de registre et de pile.">exec_transfer</a>(pmach, instr);
+        <span class="keywordflow">break</span>;
+    <span class="keywordflow">case</span> <a class="code" href="instruction_8h.html#a5ead9d7413d75b14e895c945daa82de6ad9b20a9207fb2cd3021b9eb0b7c6fe5e" title="Branchement conditionnel ou non.">BRANCH</a>:
+    <span class="keywordflow">case</span> <a class="code" href="instruction_8h.html#a5ead9d7413d75b14e895c945daa82de6abd0ebc08c262bab82a1882256d2d66e8" title="Appel de sous-programme.">CALL</a>:
+    <span class="keywordflow">case</span> <a class="code" href="instruction_8h.html#a5ead9d7413d75b14e895c945daa82de6ab2510768eaba5e52ba71678e19a65464" title="Retour de sous-programme.">RET</a>:
+        <a class="code" href="exec_8c.html#a8332a29021beccd1416a754c1a1173fe" title="Décodage et exécution des instructions BRANCH, CALL et RET.">exec_branch</a>(pmach, instr);
+        <span class="keywordflow">break</span>;
+    <span class="keywordflow">default</span>:
+        <a class="code" href="error_8c.html#a531bb138b38aef758b45a442aa53938a" title="Affichage d&#39;une erreur et fin du simulateur.">error</a>(<a class="code" href="error_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a5c708decdcbd7d8c9fddd8d9e75828a1" title="Instruction inconnue.">ERR_UNKNOWN</a>, oldpc);
+    }
+    <span class="keywordflow">return</span> <span class="keyword">true</span>;
+}
+</pre></div>
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="exec_8h_a41471ced34d27777447c2609173af7de_cgraph.png" border="0" usemap="#exec_8h_a41471ced34d27777447c2609173af7de_cgraph" alt=""/></div>
+<map name="exec_8h_a41471ced34d27777447c2609173af7de_cgraph" id="exec_8h_a41471ced34d27777447c2609173af7de_cgraph">
+</map>
+</div>
+</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="exec_8h_a41471ced34d27777447c2609173af7de_icgraph.png" border="0" usemap="#exec_8h_a41471ced34d27777447c2609173af7de_icgraph" alt=""/></div>
+<map name="exec_8h_a41471ced34d27777447c2609173af7de_icgraph" id="exec_8h_a41471ced34d27777447c2609173af7de_icgraph">
+</map>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="aae353f8fd7ccdbebd6c37fc0f75d12d3"></a>
+<a class="anchor" id="aae353f8fd7ccdbebd6c37fc0f75d12d3"></a><!-- doxytag: member="exec.h::trace" ref="aae353f8fd7ccdbebd6c37fc0f75d12d3" args="(const char *msg, Machine *pmach, Instruction instr, unsigned addr)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void trace </td>
+          <td class="memname">void <a class="el" href="exec_8h.html#aae353f8fd7ccdbebd6c37fc0f75d12d3">trace</a> </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>msg</em>, </td>
@@ -168,11 +242,12 @@ Fonctions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-</div><div class="memdoc">
+</div>
+<div class="memdoc">
 
 <p>Trace de l'exécution. </p>
 <p>On écrit l'adresse et l'instruction sous forme lisible.</p>
-<dl class="params"><dt>Paramètres</dt><dd>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">msg</td><td>le message de trace </td></tr>
     <tr><td class="paramname">pmach</td><td>la machine en cours d'exécution </td></tr>
@@ -182,18 +257,53 @@ Fonctions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Définition à la ligne <a class="el" href="exec_8c_source.html#l00199">199</a> du fichier <a class="el" href="exec_8c_source.html">exec.c</a>.</p>
+
+<p>Références <a class="el" href="instruction_8c_source.html#l00037">print_instruction()</a>.</p>
+
+<p>Référencé par <a class="el" href="machine_8c_source.html#l00191">simul()</a>.</p>
+<div class="fragment"><pre class="fragment">                                                                             {
+    printf(<span class="stringliteral">&quot;TRACE: %s: 0x%04x: &quot;</span>, msg, addr);
+    <a class="code" href="instruction_8c.html#a437080d5e8c504588a47d0dba468492f" title="Impression d&#39;une instruction sous forme lisible (d�sassemblage)">print_instruction</a>(instr, addr);
+    putchar(<span class="charliteral">&#39;\n&#39;</span>);
+}
+</pre></div>
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="exec_8h_aae353f8fd7ccdbebd6c37fc0f75d12d3_cgraph.png" border="0" usemap="#exec_8h_aae353f8fd7ccdbebd6c37fc0f75d12d3_cgraph" alt=""/></div>
+<map name="exec_8h_aae353f8fd7ccdbebd6c37fc0f75d12d3_cgraph" id="exec_8h_aae353f8fd7ccdbebd6c37fc0f75d12d3_cgraph">
+</map>
+</div>
+</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="exec_8h_aae353f8fd7ccdbebd6c37fc0f75d12d3_icgraph.png" border="0" usemap="#exec_8h_aae353f8fd7ccdbebd6c37fc0f75d12d3_icgraph" alt=""/></div>
+<map name="exec_8h_aae353f8fd7ccdbebd6c37fc0f75d12d3_icgraph" id="exec_8h_aae353f8fd7ccdbebd6c37fc0f75d12d3_icgraph">
+</map>
+</div>
+</p>
+
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
-<!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="exec_8h.html">exec.h</a></li>
-    <li class="footer">Généré le Mercredi 4 Juin 2014 08:58:05 pour Simulateur du jeu d&#39;instructions d&#39;un processeur simple par
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
-  </ul>
 </div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="exec_8h.html">exec.h</a>      </li>
+
+    <li class="footer">Généré le Jeudi Juin 12 2014 11:12:00 pour Simulateur du jeu d'instructions d'un processeur simple par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
 </body>
 </html>

@@ -3,48 +3,58 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.6"/>
 <title>Simulateur du jeu d&#39;instructions d&#39;un processeur simple: Simulation du jeu d&#39;instruction d&#39;un processeur simple</title>
+
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+
 </head>
 <body>
-<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="top"><!-- do not remove this div! -->
+
+
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  
+  
   <td style="padding-left: 0.5em;">
    <div id="projectname">Simulateur du jeu d&#39;instructions d&#39;un processeur simple
+   
    </div>
+   
   </td>
+  
+  
+  
  </tr>
  </tbody>
 </table>
 </div>
-<!-- end header part -->
-<!-- Généré par Doxygen 1.8.6 -->
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript" src="dynsections.js"></script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="dirs.html"><span>Répertoires</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
+</div>
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
     </div>
   </div>
   <div id="splitbar" style="-moz-user-select:none;" 
@@ -52,7 +62,7 @@
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('index.html','');});
+  initNavTree('index.html','');
 </script>
 <div id="doc-content">
 <div class="header">
@@ -60,34 +70,34 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">Simulation du jeu d'instruction d'un processeur simple </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Cet exercice produit un simulateur pour un processeur hypothétique et extrêmement simplifié. Le processeur lui-même est décrit dans la structure <a class="el" href="structMachine.html" title="Structure générale de la machine. ">Machine</a> et ses formats d'instructions dans la structure <a class="el" href="unionInstruction.html" title="Structure d&#39;une instruction. ">Instruction</a>.</p>
-<h1><a class="anchor" id="code"></a>
-Organisation des fichiers source et objets</h1>
-<p>Le code est fourni sous forme de fichiers d'entête (<code></code>.h) et d'une bibliothèque binaire (<b>libsimul.a</b>). Le seul fichier <code></code>.c fourni (<code><a class="el" href="test__simul_8c.html" title="Test du simulateur. ">test_simul.c</a></code>) contient la fonction <a class="el" href="test__simul_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="Programme de test. ">main()</a>.</p>
+<div class="textblock"><p>Cet exercice produit un simulateur pour un processeur hypothétique et extrêmement simplifié. Le processeur lui-même est décrit dans la structure <a class="el" href="structMachine.html" title="Structure générale de la machine.">Machine</a> et ses formats d'instructions dans la structure <a class="el" href="unionInstruction.html" title="Structure d&#39;une instruction.">Instruction</a>.</p>
+<h2><a class="anchor" id="code"></a>
+Organisation des fichiers source et objets</h2>
+<p>Le code est fourni sous forme de fichiers d'entête (<code></code>.h) et d'une bibliothèque binaire (<b>libsimul.a</b>). Le seul fichier <code></code>.c fourni (<code><a class="el" href="test__simul_8c.html" title="Test du simulateur.">test_simul.c</a></code>) contient la fonction <a class="el" href="test__simul_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="Programme de test.">main()</a>.</p>
 <p>Le code original complet est composé de 5 modules. Chaque module comporte un fichier <code></code>.h et un <code></code>.c de même nom. Le fichier-source <code></code>.c n'est pas fourni mais le fichier-objet correspondant figure dans la bibliothèque <code>libsimul.a</code>.</p>
 <dl>
-<dt>Module <code>machine</code> (<a class="el" href="machine_8h.html" title="Description de la structure du processeur et de sa mémoire. ">machine.h</a>, machine.c, machine.o) </dt>
+<dt>Module <code>machine</code> (<a class="el" href="machine_8h.html" title="Description de la structure du processeur et de sa mémoire.">machine.h</a>, <a class="el" href="machine_8c.html">machine.c</a>, machine.o) </dt>
 <dd><p class="startdd">Ce module décrit la structure générale de la machine préchargée avec un programme et des données. Ce module décrit et permet d'initialiser les mémoires d'instruction et de données et d'imprimer l'état courant de la machine (instruction, données, registres). </p>
 <p class="enddd"></p>
 </dd>
-<dt>Module <code>instruction</code> (<a class="el" href="instruction_8h.html" title="Description du jeu d&#39;instruction. ">instruction.h</a>, instruction.c, instruction.o) </dt>
-<dd><p class="startdd">La structure (le format) des instructions de la machine est décrit dans ce module qui fournit aussi une fonction de "désassemblage" (<a class="el" href="instruction_8h.html#a437080d5e8c504588a47d0dba468492f" title="Impression d&#39;une instruction sous forme lisible (désassemblage) ">print_instruction()</a>) c'est-à-dire d'impression d'une instruction sous une forme humainement sympathique. </p>
+<dt>Module <code>instruction</code> (<a class="el" href="instruction_8h.html" title="Description du jeu d&#39;instruction.">instruction.h</a>, <a class="el" href="instruction_8c.html">instruction.c</a>, instruction.o) </dt>
+<dd><p class="startdd">La structure (le format) des instructions de la machine est décrit dans ce module qui fournit aussi une fonction de "désassemblage" (<a class="el" href="instruction_8c.html#a437080d5e8c504588a47d0dba468492f" title="Impression d&#39;une instruction sous forme lisible (d�sassemblage)">print_instruction()</a>) c'est-à-dire d'impression d'une instruction sous une forme humainement sympathique. </p>
 <p class="enddd"></p>
 </dd>
-<dt>Module <code>exec</code> (<a class="el" href="exec_8h.html" title="Exécution d&#39;une instruction. ">exec.h</a>, exec.c, exec.o) </dt>
+<dt>Module <code>exec</code> (<a class="el" href="exec_8h.html" title="Exécution d&#39;une instruction.">exec.h</a>, <a class="el" href="exec_8c.html">exec.c</a>, exec.o) </dt>
 <dd><p class="startdd">On trouve dans ce module le code permettant le décodage et l'exécution des instructions. </p>
 <p class="enddd"></p>
 </dd>
-<dt>Module <code>error</code> (<a class="el" href="error_8h.html" title="Messages et codes d&#39;erreurs. ">error.h</a>, error.c, error.o) </dt>
+<dt>Module <code>error</code> (<a class="el" href="error_8h.html" title="Messages et codes d&#39;erreurs.">error.h</a>, <a class="el" href="error_8c.html">error.c</a>, error.o) </dt>
 <dd><p class="startdd">C'est le module d'affichage (en clair) des messages d'erreurs et autre <em>warnings</em>. </p>
 <p class="enddd"></p>
 </dd>
-<dt>Module <code>debug</code> (<a class="el" href="debug_8h.html" title="Fonctions de mise au point interactive. ">debug.h</a>, debug.c, debug.o) </dt>
-<dd><p class="startdd">Ce module permet l'exécution interactive en pas à pas. Sa fonction <a class="el" href="debug_8h.html#a3a88fdc680b7a1ae8c4c7c8ddee730ab" title="Dialogue de mise au point interactive pour l&#39;instruction courante. ">debug_ask()</a> est invoquée après l'exécution de chaque instruction de la machine et gère un dialogue permettant à l'utilisateur d'afficher l'état de la machine (contenu des mémoires et des registres) ou de passer à l'exécution de l'instruction suivante. </p>
+<dt>Module <code>debug</code> (<a class="el" href="debug_8h.html" title="Fonctions de mise au point interactive.">debug.h</a>, <a class="el" href="debug_8c.html">debug.c</a>, debug.o) </dt>
+<dd><p class="startdd">Ce module permet l'exécution interactive en pas à pas. Sa fonction <a class="el" href="debug_8c.html#a3a88fdc680b7a1ae8c4c7c8ddee730ab" title="Dialogue de mise au point interactive pour l&#39;instruction courante.">debug_ask()</a> est invoquée après l'exécution de chaque instruction de la machine et gère un dialogue permettant à l'utilisateur d'afficher l'état de la machine (contenu des mémoires et des registres) ou de passer à l'exécution de l'instruction suivante. </p>
 <p class="enddd"></p>
 </dd>
-<dt>Fichier <code><a class="el" href="test__simul_8c.html" title="Test du simulateur. ">test_simul.c</a></code>  </dt>
-<dd><p class="startdd">Ce fichier source contient la fonction <a class="el" href="test__simul_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="Programme de test. ">main()</a> qui</p>
+<dt>Fichier <code><a class="el" href="test__simul_8c.html" title="Test du simulateur.">test_simul.c</a></code>  </dt>
+<dd><p class="startdd">Ce fichier source contient la fonction <a class="el" href="test__simul_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="Programme de test.">main()</a> qui</p>
 <ul>
 <li>
 <p class="startli">décode les options de ligne de commande (voir plus loin)</p>
@@ -119,18 +129,18 @@ affiche l'état (mémoires, registres) final de la machine </li>
 <p class="enddd"></p>
 </dd>
 <dt>-b </dt>
-<dd><p class="startdd">Le dernier argument de la ligne de commande doit être le nom d'un fichier <em>binaire</em> contenant une représentation du programme et de ses données. Le format de ce fichier est décrit avec la fonction <a class="el" href="machine_8h.html#ac59b88844961c2479108151e24dd555a" title="Lecture d&#39;un programme depuis un fichier binaire. ">read_program()</a>. On en trouvera des exemples dans le repertoire Examples (fichiers <code></code>.bin).</p>
-<p>Sans option <b>-b</b> la fonction <a class="el" href="test__simul_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="Programme de test. ">main()</a> choisit et exécute un programme prédéfini (dans le fichier <code>prog.o</code> de la bibliothèque <code>libsimul.a</code>).</p>
+<dd><p class="startdd">Le dernier argument de la ligne de commande doit être le nom d'un fichier <em>binaire</em> contenant une représentation du programme et de ses données. Le format de ce fichier est décrit avec la fonction <a class="el" href="machine_8c.html#ac59b88844961c2479108151e24dd555a" title="Lecture d&#39;un programme depuis un fichier binaire.">read_program()</a>. On en trouvera des exemples dans le repertoire Examples (fichiers <code></code>.bin).</p>
+<p>Sans option <b>-b</b> la fonction <a class="el" href="test__simul_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="Programme de test.">main()</a> choisit et exécute un programme prédéfini (dans le fichier <code>prog.o</code> de la bibliothèque <code>libsimul.a</code>).</p>
 <p></p>
 <p></p>
 <p class="enddd"></p>
 </dd>
 </dl>
-<dl class="section attention"><dt>Attention</dt><dd><em>Le code est écrit en langage C et utilise la norme C99 (option <b>-std=c99</b> de <b>gcc</b>). Il ne compile pas en mode C90 !</em></dd></dl>
+<dl class="attention"><dt><b>Attention:</b></dt><dd><em>Le code est écrit en langage C et utilise la norme C99 (option <b>-std=c99</b> de <b>gcc</b>). Il ne compile pas en mode C90 !</em></dd></dl>
 </dd>
 </dl>
-<h1><a class="anchor" id="make"></a>
-Utilisation de la Makefile</h1>
+<h2><a class="anchor" id="make"></a>
+Utilisation de la Makefile</h2>
 <dl>
 <dt>make </dt>
 <dd><p class="startdd">Reconstruit l'exécutable de test, <b>test_simul</b>. </p>
@@ -151,34 +161,36 @@ Utilisation de la Makefile</h1>
 <dt>make clean_doc </dt>
 <dd>Détruit la documentation générée par <b>doxygen</b>.  </dd>
 </dl>
-<h1><a class="anchor" id="build"></a>
-Construction et utilisation du simulateur</h1>
-<h2><a class="anchor" id="build_init"></a>
-Construction du simulateur initial</h2>
+<h2><a class="anchor" id="build"></a>
+Construction et utilisation du simulateur</h2>
+<h3><a class="anchor" id="build_init"></a>
+Construction du simulateur initial</h3>
 <p>Initialement il suffit de faire sous un <b>shell</b> quelconque </p>
-<div class="fragment"><div class="line">make</div>
-</div><!-- fragment --><p> puis </p>
-<div class="fragment"><div class="line">test_simul</div>
-</div><!-- fragment --><p> pour exécuter le programme prédéfini. Ou alors </p>
-<div class="fragment"><div class="line">test_simul -d -b Examples/prog_subroutine.bin</div>
-</div><!-- fragment --><p> pour exécuter le programme dont le nom est indiqué en mode interactif.</p>
-<h2><a class="anchor" id="build_yours"></a>
-Intégration de votre propre code</h2>
+<div class="fragment"><pre class="fragment">make
+</pre></div><p> puis </p>
+<div class="fragment"><pre class="fragment">test_simul
+</pre></div><p> pour exécuter le programme prédéfini. Ou alors </p>
+<div class="fragment"><pre class="fragment">test_simul -d -b Examples/prog_subroutine.bin
+</pre></div><p> pour exécuter le programme dont le nom est indiqué en mode interactif.</p>
+<h3><a class="anchor" id="build_yours"></a>
+Intégration de votre propre code</h3>
 <p>Pour intégrer votre propre code, il suffit d'éditer la Makefile pour ajouter vos propres fichiers <code></code>.c ; pour cela il vous suffit de définir la variable de <b>make</b> nommée <code>USERSRC</code> en y mettant la liste de vos propres fichiers <code></code>.c (elle est initialement vide) ; par exemple</p>
-<div class="fragment"><div class="line">USERSRC = machine.c debug.c </div>
-</div><!-- fragment --><p>puis de faire <b>make</b> pour reconstruire l'exécutable <b>test_simul</b>. Cela compilera vos <code></code>.c et l'éditeur de liens choisira les <code></code>.o correspondants de préférence à ceux qui sont dans la bibliothèque <code>libsimul.a</code>. Si vous ajoutez des <code></code>.h ils seront pris en compte par la regénération des dépendances (<code>depend.out</code>).</p>
-<dl class="section attention"><dt>Attention</dt><dd><em><b>Ne modifiez pas les fichiers <code></code>.h fournis car les objets de <code>libsimul.a</code> en dépendent</b></em>.</dd></dl>
-<dl class="section author"><dt>Auteur</dt><dd>Jean-Paul Rigault </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>Avril 2011 </dd></dl>
+<div class="fragment"><pre class="fragment">USERSRC = machine.c debug.c 
+</pre></div><p>puis de faire <b>make</b> pour reconstruire l'exécutable <b>test_simul</b>. Cela compilera vos <code></code>.c et l'éditeur de liens choisira les <code></code>.o correspondants de préférence à ceux qui sont dans la bibliothèque <code>libsimul.a</code>. Si vous ajoutez des <code></code>.h ils seront pris en compte par la regénération des dépendances (<code>depend.out</code>).</p>
+<dl class="attention"><dt><b>Attention:</b></dt><dd><em><b>Ne modifiez pas les fichiers <code></code>.h fournis car les objets de <code>libsimul.a</code> en dépendent</b></em>.</dd></dl>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Jean-Paul Rigault </dd></dl>
+<dl class="date"><dt><b>Date:</b></dt><dd>Avril 2011 </dd></dl>
 </div></div><!-- contents -->
-</div><!-- doc-content -->
-<!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Généré le Mercredi 4 Juin 2014 08:58:05 pour Simulateur du jeu d&#39;instructions d&#39;un processeur simple par
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
-  </ul>
 </div>
+  <div id="nav-path" class="navpath">
+    <ul>
+
+    <li class="footer">Généré le Jeudi Juin 12 2014 11:12:00 pour Simulateur du jeu d'instructions d'un processeur simple par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
 </body>
 </html>
