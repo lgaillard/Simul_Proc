@@ -25,6 +25,10 @@ void set_cc(Machine *pmach, unsigned int reg) {
 }
 
 bool check_condition(Machine *pmach, Condition cond) {
+
+	if (pmach->_cc == CC_U && cond != NC)
+		error(ERR_CONDITION, pmach->_pc);
+
 	switch (cond) {
 	case NC:
 		return true;
