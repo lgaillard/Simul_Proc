@@ -6,15 +6,28 @@
 #include "error.h"
 
 
+//! Recupere l'adresse cible de l'instruction
+/*!
+ * \param pmach la machine/programme en cours d'exécution
+ * \param instr l'instruction à exécuter
+ */
 unsigned int operand_address(Machine *pmach, Instruction instr) {
 	assert(!instr.instr_generic._immediate);
 
+	//! Si l'instruction est en format indexée
 	if (instr.instr_generic._indexed)
 		return pmach->_registers[instr.instr_indexed._rindex] + instr.instr_indexed._offset;
+	//! Sinon elle est en absolue
 	else
 		return instr.instr_absolute._address;
 }
 
+
+//! Mets a jour le flag CC de la machine apres un LOAD, ADD ou SUB
+/*!
+ * \param pmach la machine/programme en cours d'exécution
+ * \param reg le registre modifié par l'instruction
+ */
 void set_cc(Machine *pmach, unsigned int reg) {
 	if (pmach->_registers[reg] > 0)
 		pmach->_cc = CC_P;
@@ -24,6 +37,12 @@ void set_cc(Machine *pmach, unsigned int reg) {
 		pmach->_cc = CC_Z;
 }
 
+
+//! Test de la condition pour les instructions BRANCH et CALL
+/*!
+ * \param pmach la machine/programme en cours d'exécution
+ * \param cond Condition a tester
+ */
 bool check_condition(Machine *pmach, Condition cond) {
 
 	if (pmach->_cc == CC_U && cond != NC)
@@ -49,6 +68,11 @@ bool check_condition(Machine *pmach, Condition cond) {
 	}
 }
 
+//! Décodage et exécution des instructions de manipulation de registre et de pile
+/*!
+ * \param pmach la machine/programme en cours d'exécution
+ * \param instr l'instruction à exécuter
+ */
 void exec_transfer(Machine *pmach, Instruction instr) {
 	unsigned int oldpc = pmach->_pc - 1;
 
@@ -97,6 +121,11 @@ void exec_transfer(Machine *pmach, Instruction instr) {
 	}
 }
 
+//! Décodage et exécution des instructions BRANCH, CALL et RET
+/*!
+ * \param pmach la machine/programme en cours d'exécution
+ * \param instr l'instruction à exécuter
+ */
 void exec_branch(Machine *pmach, Instruction instr) {
 	unsigned int oldpc = pmach->_pc - 1;
 
