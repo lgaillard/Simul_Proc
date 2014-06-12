@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Simulateur du jeu d&#39;instructions d&#39;un processeur simple: Référence du fichier debug.c</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulateur du jeu d&#39;instructions d&#39;un processeur simple
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript" src="dynsections.js"></script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="dirs.html"><span>Répertoires</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('debug_8c.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier debug.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="debug_8h_source.html">debug.h</a>&quot;</code><br/>
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Graphe des dépendances par inclusion de debug.c:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="debug_8c__incl.png" border="0" usemap="#debug_8c" alt=""/></div>
+<map name="debug_8c" id="debug_8c">
+</map>
+</div>
+</div>
+<p><a href="debug_8c_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8c.html#a78aabafa32dc6a0a642796b2de5adbf0">ANSWSIZE</a>&#160;&#160;&#160;10</td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8c.html#a97ee70a8770dc30d06c744b24eb2fcfc">help</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche la liste des commandes disponibles en Debug.  <a href="#a97ee70a8770dc30d06c744b24eb2fcfc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8c.html#a3a88fdc680b7a1ae8c4c7c8ddee730ab">debug_ask</a> (<a class="el" href="structMachine.html">Machine</a> *pmach)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Dialogue de mise au point interactive pour l'instruction courante.  <a href="#a3a88fdc680b7a1ae8c4c7c8ddee730ab"></a><br/></td></tr>
+</table>
+<hr/><h2>Documentation des macros</h2>
+<a class="anchor" id="a78aabafa32dc6a0a642796b2de5adbf0"></a><!-- doxytag: member="debug.c::ANSWSIZE" ref="a78aabafa32dc6a0a642796b2de5adbf0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="debug_8c.html#a78aabafa32dc6a0a642796b2de5adbf0">ANSWSIZE</a>&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="debug_8c_source.html#l00004">4</a> du fichier <a class="el" href="debug_8c_source.html">debug.c</a>.</p>
+
+<p>Référencé par <a class="el" href="debug_8c_source.html#l00031">debug_ask()</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a3a88fdc680b7a1ae8c4c7c8ddee730ab"></a><!-- doxytag: member="debug.c::debug_ask" ref="a3a88fdc680b7a1ae8c4c7c8ddee730ab" args="(Machine *pmach)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="debug_8h.html#a3a88fdc680b7a1ae8c4c7c8ddee730ab">debug_ask</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMachine.html">Machine</a> *&#160;</td>
+          <td class="paramname"><em>pmach</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Dialogue de mise au point interactive pour l'instruction courante. </p>
+<p>Cette fonction g�re le dialogue pour l'option <code>-d</code> (debug). Dans ce mode, elle est invoqu�e apr�s l'ex�cution de chaque instruction. Elle affiche le menu de mise au point et on ex�cute le choix de l'utilisateur. Si cette fonction retourne faux, on abandonne le mode de mise au point interactive pour les instructions suivantes et jusqu'� la fin du programme.</p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mach</td><td>la machine/programme en cours de simulation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>vrai si l'on doit continuer en mode debug, faux sinon </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="debug_8c_source.html#l00031">31</a> du fichier <a class="el" href="debug_8c_source.html">debug.c</a>.</p>
+
+<p>Références <a class="el" href="debug_8c_source.html#l00004">ANSWSIZE</a>, <a class="el" href="debug_8c_source.html#l00007">help()</a>, <a class="el" href="machine_8c_source.html#l00172">print_cpu()</a>, <a class="el" href="machine_8c_source.html#l00157">print_data()</a>, et <a class="el" href="machine_8c_source.html#l00141">print_program()</a>.</p>
+
+<p>Référencé par <a class="el" href="machine_8c_source.html#l00191">simul()</a>.</p>
+<div class="fragment"><pre class="fragment">                               {
+    <span class="keywordtype">char</span> answer[<a class="code" href="debug_8c.html#a78aabafa32dc6a0a642796b2de5adbf0">ANSWSIZE</a>];
+    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {
+        printf(<span class="stringliteral">&quot;DEBUG? &quot;</span>);
+        fflush(stdout);
+        fgets(answer, <a class="code" href="debug_8c.html#a78aabafa32dc6a0a642796b2de5adbf0">ANSWSIZE</a>, stdin);
+        <span class="keywordflow">switch</span> (answer[0]) {
+        <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:
+            <a class="code" href="debug_8c.html#a97ee70a8770dc30d06c744b24eb2fcfc" title="Affiche la liste des commandes disponibles en Debug.">help</a>();
+            <span class="keywordflow">break</span>;
+        <span class="keywordflow">case</span> <span class="charliteral">&#39;c&#39;</span>:
+            <span class="keywordflow">return</span> <span class="keyword">false</span>;
+        <span class="keywordflow">case</span> <span class="charliteral">&#39;s&#39;</span>:
+        <span class="keywordflow">case</span> <span class="charliteral">&#39;\n&#39;</span>:
+            <span class="keywordflow">return</span> <span class="keyword">true</span>;
+        <span class="keywordflow">case</span> <span class="charliteral">&#39;r&#39;</span>:
+            <a class="code" href="machine_8c.html#a87cfff30238b966cfc3c0c416d7076e9" title="Affichage des registres du CPU.">print_cpu</a>(pmach);
+            <span class="keywordflow">break</span>;
+        <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:
+        <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>:
+            <a class="code" href="machine_8c.html#aba3ce4987ef379073d9d3f31debf89e7" title="Affichage des instructions du programme.">print_program</a>(pmach);
+            <span class="keywordflow">break</span>;
+        <span class="keywordflow">case</span> <span class="charliteral">&#39;m&#39;</span>:
+            <a class="code" href="machine_8c.html#a87cfff30238b966cfc3c0c416d7076e9" title="Affichage des registres du CPU.">print_cpu</a>(pmach);
+        <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:
+            <a class="code" href="machine_8c.html#a549be6eaf631d871e9357513c748640d" title="Affichage des donn�es du programme.">print_data</a>(pmach);
+            <span class="keywordflow">break</span>;
+        }
+    }
+}</pre></div>
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="debug_8c_a3a88fdc680b7a1ae8c4c7c8ddee730ab_cgraph.png" border="0" usemap="#debug_8c_a3a88fdc680b7a1ae8c4c7c8ddee730ab_cgraph" alt=""/></div>
+<map name="debug_8c_a3a88fdc680b7a1ae8c4c7c8ddee730ab_cgraph" id="debug_8c_a3a88fdc680b7a1ae8c4c7c8ddee730ab_cgraph">
+</map>
+</div>
+</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="debug_8c_a3a88fdc680b7a1ae8c4c7c8ddee730ab_icgraph.png" border="0" usemap="#debug_8c_a3a88fdc680b7a1ae8c4c7c8ddee730ab_icgraph" alt=""/></div>
+<map name="debug_8c_a3a88fdc680b7a1ae8c4c7c8ddee730ab_icgraph" id="debug_8c_a3a88fdc680b7a1ae8c4c7c8ddee730ab_icgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a97ee70a8770dc30d06c744b24eb2fcfc"></a><!-- doxytag: member="debug.c::help" ref="a97ee70a8770dc30d06c744b24eb2fcfc" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="debug_8c.html#a97ee70a8770dc30d06c744b24eb2fcfc">help</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Affiche la liste des commandes disponibles en Debug. </p>
+
+<p>Définition à la ligne <a class="el" href="debug_8c_source.html#l00007">7</a> du fichier <a class="el" href="debug_8c_source.html">debug.c</a>.</p>
+
+<p>Référencé par <a class="el" href="debug_8c_source.html#l00031">debug_ask()</a>.</p>
+<div class="fragment"><pre class="fragment">            {
+    puts(<span class="stringliteral">&quot;Available commands:&quot;</span>);
+    puts(<span class="stringliteral">&quot;\th\thelp&quot;</span>);
+    puts(<span class="stringliteral">&quot;\tc\tcontinue (exit interactive debug mode)&quot;</span>);
+    puts(<span class="stringliteral">&quot;\ts\tstep by step (next instuction)&quot;</span>);
+    puts(<span class="stringliteral">&quot;\tRET\tstep by step (next instuction)&quot;</span>);
+    puts(<span class="stringliteral">&quot;\tr\tprint registers&quot;</span>);
+    puts(<span class="stringliteral">&quot;\td\tprint data memory&quot;</span>);
+    puts(<span class="stringliteral">&quot;\tt\tprint text (prograrm) memory&quot;</span>);
+    puts(<span class="stringliteral">&quot;\tp\tprint text (prograrm) memory&quot;</span>);
+    puts(<span class="stringliteral">&quot;\tm\tprint registers and data memory&quot;</span>);
+}
+</pre></div>
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="debug_8c_a97ee70a8770dc30d06c744b24eb2fcfc_icgraph.png" border="0" usemap="#debug_8c_a97ee70a8770dc30d06c744b24eb2fcfc_icgraph" alt=""/></div>
+<map name="debug_8c_a97ee70a8770dc30d06c744b24eb2fcfc_icgraph" id="debug_8c_a97ee70a8770dc30d06c744b24eb2fcfc_icgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="debug_8c.html">debug.c</a>      </li>
+
+    <li class="footer">Généré le Jeudi Juin 12 2014 11:01:24 pour Simulateur du jeu d'instructions d'un processeur simple par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>
