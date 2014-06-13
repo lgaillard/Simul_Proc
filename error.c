@@ -6,6 +6,7 @@
 const char *error_names[] = {
     "No error",
     "Unknown instruction",
+	"Illegal instruction",
     "Illegal condition",
     "Immediate value forbidden",
     "Segmentation fault in text",
