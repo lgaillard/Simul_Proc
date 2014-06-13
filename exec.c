@@ -44,10 +44,6 @@ void set_cc(Machine *pmach, unsigned int reg) {
  * \param cond Condition a tester
  */
 bool check_condition(Machine *pmach, Condition cond) {
-
-	if (pmach->_cc == CC_U && cond != NC)
-		error(ERR_CONDITION, pmach->_pc);
-
 	switch (cond) {
 	case NC:
 		return true;
