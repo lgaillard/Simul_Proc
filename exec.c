@@ -78,7 +78,7 @@ void exec_transfer(Machine *pmach, Instruction instr) {
 
 	if ((instr.instr_generic._cop == STORE || instr.instr_generic._cop == POP)
 		&& instr.instr_generic._immediate)
-		error(ERR_IMMEDIATE, pmach->_pc);
+		error(ERR_IMMEDIATE, oldpc);
 	
 	if (instr.instr_generic._immediate) {
 		value = instr.instr_immediate._value;
@@ -130,7 +130,7 @@ void exec_branch(Machine *pmach, Instruction instr) {
 
 	if (instr.instr_generic._cop == BRANCH || instr.instr_generic._cop == CALL) {
 		if (instr.instr_generic._immediate)
-			error(ERR_IMMEDIATE, pmach->_pc);
+			error(ERR_IMMEDIATE, oldpc);
 		if (op_address >= pmach->_textsize)
 			error(ERR_SEGTEXT, oldpc);
 		if (cond > LAST_CONDITION)
