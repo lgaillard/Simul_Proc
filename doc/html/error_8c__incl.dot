@@ -1,4 +1,4 @@
-digraph G
+digraph "error.c"
 {
   edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
   node [fontname="FreeSans",fontsize="10",shape=record];
@@ -10,6 +10,6 @@ digraph G
   Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
   Node4 [label="assert.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
   Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node5 [label="error.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$error_8h.html",tooltip="Messages et codes d&#39;erreurs."];
+  Node5 [label="error.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$error_8h.html",tooltip="Messages et codes d&#39;erreurs. "];
   Node5 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
 }

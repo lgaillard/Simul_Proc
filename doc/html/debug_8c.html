@@ -3,52 +3,41 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
 <title>Simulateur du jeu d&#39;instructions d&#39;un processeur simple: Référence du fichier debug.c</title>
-
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
+  $(window).load(resizeHeight);
 </script>
-
-
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div id="top"><!-- do not remove this div! -->
-
-
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  
-  
   <td style="padding-left: 0.5em;">
    <div id="projectname">Simulateur du jeu d&#39;instructions d&#39;un processeur simple
-   
    </div>
-   
   </td>
-  
-  
-  
  </tr>
  </tbody>
 </table>
 </div>
-
-<!-- Généré par Doxygen 1.7.6.1 -->
-<script type="text/javascript" src="dynsections.js"></script>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.7 -->
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
-      <li><a href="dirs.html"><span>Répertoires</span></a></li>
     </ul>
   </div>
   <div id="navrow2" class="tabs2">
@@ -57,10 +46,11 @@
       <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
     </ul>
   </div>
-</div>
+</div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
     </div>
   </div>
   <div id="splitbar" style="-moz-user-select:none;" 
@@ -68,7 +58,7 @@
   </div>
 </div>
 <script type="text/javascript">
-  initNavTree('debug_8c.html','');
+$(document).ready(function(){initNavTree('debug_8c.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
@@ -79,8 +69,8 @@
 <div class="title">Référence du fichier debug.c</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="debug_8h_source.html">debug.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="debug_8h_source.html">debug.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Graphe des dépendances par inclusion de debug.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -93,27 +83,30 @@
 </div>
 <p><a href="debug_8c_source.html">Aller au code source de ce fichier.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="define-members"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8c.html#a78aabafa32dc6a0a642796b2de5adbf0">ANSWSIZE</a>&#160;&#160;&#160;10</td></tr>
-<tr><td colspan="2"><h2><a name="func-members"></a>
+<tr class="memitem:a78aabafa32dc6a0a642796b2de5adbf0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8c.html#a78aabafa32dc6a0a642796b2de5adbf0">ANSWSIZE</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a78aabafa32dc6a0a642796b2de5adbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Fonctions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8c.html#a97ee70a8770dc30d06c744b24eb2fcfc">help</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche la liste des commandes disponibles en Debug.  <a href="#a97ee70a8770dc30d06c744b24eb2fcfc"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8c.html#a3a88fdc680b7a1ae8c4c7c8ddee730ab">debug_ask</a> (<a class="el" href="structMachine.html">Machine</a> *pmach)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Dialogue de mise au point interactive pour l'instruction courante.  <a href="#a3a88fdc680b7a1ae8c4c7c8ddee730ab"></a><br/></td></tr>
+<tr class="memitem:a97ee70a8770dc30d06c744b24eb2fcfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8c.html#a97ee70a8770dc30d06c744b24eb2fcfc">help</a> ()</td></tr>
+<tr class="memdesc:a97ee70a8770dc30d06c744b24eb2fcfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche la liste des commandes disponibles en Debug.  <a href="#a97ee70a8770dc30d06c744b24eb2fcfc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a97ee70a8770dc30d06c744b24eb2fcfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a88fdc680b7a1ae8c4c7c8ddee730ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8c.html#a3a88fdc680b7a1ae8c4c7c8ddee730ab">debug_ask</a> (<a class="el" href="structMachine.html">Machine</a> *pmach)</td></tr>
+<tr class="memdesc:a3a88fdc680b7a1ae8c4c7c8ddee730ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dialogue de mise au point interactive pour l'instruction courante.  <a href="#a3a88fdc680b7a1ae8c4c7c8ddee730ab">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3a88fdc680b7a1ae8c4c7c8ddee730ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2>Documentation des macros</h2>
-<a class="anchor" id="a78aabafa32dc6a0a642796b2de5adbf0"></a><!-- doxytag: member="debug.c::ANSWSIZE" ref="a78aabafa32dc6a0a642796b2de5adbf0" args="" -->
+<h2 class="groupheader">Documentation des macros</h2>
+<a class="anchor" id="a78aabafa32dc6a0a642796b2de5adbf0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="debug_8c.html#a78aabafa32dc6a0a642796b2de5adbf0">ANSWSIZE</a>&#160;&#160;&#160;10</td>
+          <td class="memname">#define ANSWSIZE&#160;&#160;&#160;10</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 <p>Définition à la ligne <a class="el" href="debug_8c_source.html#l00004">4</a> du fichier <a class="el" href="debug_8c_source.html">debug.c</a>.</p>
 
@@ -121,67 +114,71 @@ Fonctions</h2></td></tr>
 
 </div>
 </div>
-<hr/><h2>Documentation des fonctions</h2>
-<a class="anchor" id="a3a88fdc680b7a1ae8c4c7c8ddee730ab"></a><!-- doxytag: member="debug.c::debug_ask" ref="a3a88fdc680b7a1ae8c4c7c8ddee730ab" args="(Machine *pmach)" -->
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="a3a88fdc680b7a1ae8c4c7c8ddee730ab"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="debug_8h.html#a3a88fdc680b7a1ae8c4c7c8ddee730ab">debug_ask</a> </td>
+          <td class="memname">bool debug_ask </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structMachine.html">Machine</a> *&#160;</td>
           <td class="paramname"><em>pmach</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 <p>Dialogue de mise au point interactive pour l'instruction courante. </p>
 <p>Cette fonction g�re le dialogue pour l'option <code>-d</code> (debug). Dans ce mode, elle est invoqu�e apr�s l'ex�cution de chaque instruction. Elle affiche le menu de mise au point et on ex�cute le choix de l'utilisateur. Si cette fonction retourne faux, on abandonne le mode de mise au point interactive pour les instructions suivantes et jusqu'� la fin du programme.</p>
-<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+<dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">mach</td><td>la machine/programme en cours de simulation </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>vrai si l'on doit continuer en mode debug, faux sinon </dd></dl>
+<dl class="section return"><dt>Renvoie</dt><dd>vrai si l'on doit continuer en mode debug, faux sinon </dd></dl>
 
 <p>Définition à la ligne <a class="el" href="debug_8c_source.html#l00031">31</a> du fichier <a class="el" href="debug_8c_source.html">debug.c</a>.</p>
 
 <p>Références <a class="el" href="debug_8c_source.html#l00004">ANSWSIZE</a>, <a class="el" href="debug_8c_source.html#l00007">help()</a>, <a class="el" href="machine_8c_source.html#l00172">print_cpu()</a>, <a class="el" href="machine_8c_source.html#l00157">print_data()</a>, et <a class="el" href="machine_8c_source.html#l00141">print_program()</a>.</p>
 
 <p>Référencé par <a class="el" href="machine_8c_source.html#l00191">simul()</a>.</p>
-<div class="fragment"><pre class="fragment">                               {
-    <span class="keywordtype">char</span> answer[<a class="code" href="debug_8c.html#a78aabafa32dc6a0a642796b2de5adbf0">ANSWSIZE</a>];
-    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {
-        printf(<span class="stringliteral">&quot;DEBUG? &quot;</span>);
-        fflush(stdout);
-        fgets(answer, <a class="code" href="debug_8c.html#a78aabafa32dc6a0a642796b2de5adbf0">ANSWSIZE</a>, stdin);
-        <span class="keywordflow">switch</span> (answer[0]) {
-        <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:
-            <a class="code" href="debug_8c.html#a97ee70a8770dc30d06c744b24eb2fcfc" title="Affiche la liste des commandes disponibles en Debug.">help</a>();
-            <span class="keywordflow">break</span>;
-        <span class="keywordflow">case</span> <span class="charliteral">&#39;c&#39;</span>:
-            <span class="keywordflow">return</span> <span class="keyword">false</span>;
-        <span class="keywordflow">case</span> <span class="charliteral">&#39;s&#39;</span>:
-        <span class="keywordflow">case</span> <span class="charliteral">&#39;\n&#39;</span>:
-            <span class="keywordflow">return</span> <span class="keyword">true</span>;
-        <span class="keywordflow">case</span> <span class="charliteral">&#39;r&#39;</span>:
-            <a class="code" href="machine_8c.html#a87cfff30238b966cfc3c0c416d7076e9" title="Affichage des registres du CPU.">print_cpu</a>(pmach);
-            <span class="keywordflow">break</span>;
-        <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:
-        <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>:
-            <a class="code" href="machine_8c.html#aba3ce4987ef379073d9d3f31debf89e7" title="Affichage des instructions du programme.">print_program</a>(pmach);
-            <span class="keywordflow">break</span>;
-        <span class="keywordflow">case</span> <span class="charliteral">&#39;m&#39;</span>:
-            <a class="code" href="machine_8c.html#a87cfff30238b966cfc3c0c416d7076e9" title="Affichage des registres du CPU.">print_cpu</a>(pmach);
-        <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:
-            <a class="code" href="machine_8c.html#a549be6eaf631d871e9357513c748640d" title="Affichage des donn�es du programme.">print_data</a>(pmach);
-            <span class="keywordflow">break</span>;
-        }
-    }
-}</pre></div>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                               {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">char</span> answer[<a class="code" href="debug_8c.html#a78aabafa32dc6a0a642796b2de5adbf0">ANSWSIZE</a>];</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        printf(<span class="stringliteral">&quot;DEBUG? &quot;</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        fflush(stdout);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        fgets(answer, <a class="code" href="debug_8c.html#a78aabafa32dc6a0a642796b2de5adbf0">ANSWSIZE</a>, stdin);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">switch</span> (answer[0]) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="debug_8c.html#a97ee70a8770dc30d06c744b24eb2fcfc">help</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;c&#39;</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;s&#39;</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;\n&#39;</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;r&#39;</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="machine_8c.html#a87cfff30238b966cfc3c0c416d7076e9">print_cpu</a>(pmach);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="machine_8c.html#aba3ce4987ef379073d9d3f31debf89e7">print_program</a>(pmach);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;m&#39;</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="machine_8c.html#a87cfff30238b966cfc3c0c416d7076e9">print_cpu</a>(pmach);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="machine_8c.html#a549be6eaf631d871e9357513c748640d">print_data</a>(pmach);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}<div class="ttc" id="debug_8c_html_a78aabafa32dc6a0a642796b2de5adbf0"><div class="ttname"><a href="debug_8c.html#a78aabafa32dc6a0a642796b2de5adbf0">ANSWSIZE</a></div><div class="ttdeci">#define ANSWSIZE</div><div class="ttdef"><b>Definition:</b> <a href="debug_8c_source.html#l00004">debug.c:4</a></div></div>
+<div class="ttc" id="machine_8c_html_aba3ce4987ef379073d9d3f31debf89e7"><div class="ttname"><a href="machine_8c.html#aba3ce4987ef379073d9d3f31debf89e7">print_program</a></div><div class="ttdeci">void print_program(Machine *pmach)</div><div class="ttdoc">Affichage des instructions du programme. </div><div class="ttdef"><b>Definition:</b> <a href="machine_8c_source.html#l00141">machine.c:141</a></div></div>
+<div class="ttc" id="debug_8c_html_a97ee70a8770dc30d06c744b24eb2fcfc"><div class="ttname"><a href="debug_8c.html#a97ee70a8770dc30d06c744b24eb2fcfc">help</a></div><div class="ttdeci">void help()</div><div class="ttdoc">Affiche la liste des commandes disponibles en Debug. </div><div class="ttdef"><b>Definition:</b> <a href="debug_8c_source.html#l00007">debug.c:7</a></div></div>
+<div class="ttc" id="machine_8c_html_a87cfff30238b966cfc3c0c416d7076e9"><div class="ttname"><a href="machine_8c.html#a87cfff30238b966cfc3c0c416d7076e9">print_cpu</a></div><div class="ttdeci">void print_cpu(Machine *pmach)</div><div class="ttdoc">Affichage des registres du CPU. </div><div class="ttdef"><b>Definition:</b> <a href="machine_8c_source.html#l00172">machine.c:172</a></div></div>
+<div class="ttc" id="machine_8c_html_a549be6eaf631d871e9357513c748640d"><div class="ttname"><a href="machine_8c.html#a549be6eaf631d871e9357513c748640d">print_data</a></div><div class="ttdeci">void print_data(Machine *pmach)</div><div class="ttdoc">Affichage des donn�es du programme. </div><div class="ttdef"><b>Definition:</b> <a href="machine_8c_source.html#l00157">machine.c:157</a></div></div>
+</div><!-- fragment -->
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Voici le graphe d'appel pour cette fonction :</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -206,38 +203,37 @@ Fonctions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a97ee70a8770dc30d06c744b24eb2fcfc"></a><!-- doxytag: member="debug.c::help" ref="a97ee70a8770dc30d06c744b24eb2fcfc" args="()" -->
+<a class="anchor" id="a97ee70a8770dc30d06c744b24eb2fcfc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="debug_8c.html#a97ee70a8770dc30d06c744b24eb2fcfc">help</a> </td>
+          <td class="memname">void help </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 <p>Affiche la liste des commandes disponibles en Debug. </p>
 
 <p>Définition à la ligne <a class="el" href="debug_8c_source.html#l00007">7</a> du fichier <a class="el" href="debug_8c_source.html">debug.c</a>.</p>
 
 <p>Référencé par <a class="el" href="debug_8c_source.html#l00031">debug_ask()</a>.</p>
-<div class="fragment"><pre class="fragment">            {
-    puts(<span class="stringliteral">&quot;Available commands:&quot;</span>);
-    puts(<span class="stringliteral">&quot;\th\thelp&quot;</span>);
-    puts(<span class="stringliteral">&quot;\tc\tcontinue (exit interactive debug mode)&quot;</span>);
-    puts(<span class="stringliteral">&quot;\ts\tstep by step (next instuction)&quot;</span>);
-    puts(<span class="stringliteral">&quot;\tRET\tstep by step (next instuction)&quot;</span>);
-    puts(<span class="stringliteral">&quot;\tr\tprint registers&quot;</span>);
-    puts(<span class="stringliteral">&quot;\td\tprint data memory&quot;</span>);
-    puts(<span class="stringliteral">&quot;\tt\tprint text (prograrm) memory&quot;</span>);
-    puts(<span class="stringliteral">&quot;\tp\tprint text (prograrm) memory&quot;</span>);
-    puts(<span class="stringliteral">&quot;\tm\tprint registers and data memory&quot;</span>);
-}
-</pre></div>
+<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;            {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    puts(<span class="stringliteral">&quot;Available commands:&quot;</span>);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    puts(<span class="stringliteral">&quot;\th\thelp&quot;</span>);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    puts(<span class="stringliteral">&quot;\tc\tcontinue (exit interactive debug mode)&quot;</span>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    puts(<span class="stringliteral">&quot;\ts\tstep by step (next instuction)&quot;</span>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    puts(<span class="stringliteral">&quot;\tRET\tstep by step (next instuction)&quot;</span>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    puts(<span class="stringliteral">&quot;\tr\tprint registers&quot;</span>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    puts(<span class="stringliteral">&quot;\td\tprint data memory&quot;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    puts(<span class="stringliteral">&quot;\tt\tprint text (prograrm) memory&quot;</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    puts(<span class="stringliteral">&quot;\tp\tprint text (prograrm) memory&quot;</span>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    puts(<span class="stringliteral">&quot;\tm\tprint registers and data memory&quot;</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+</div><!-- fragment -->
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Voici le graphe des appelants de cette fonction :</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -252,17 +248,15 @@ Fonctions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
-</div>
-  <div id="nav-path" class="navpath">
-    <ul>
-      <li class="navelem"><a class="el" href="debug_8c.html">debug.c</a>      </li>
-
-    <li class="footer">Généré le Jeudi Juin 12 2014 11:12:00 pour Simulateur du jeu d'instructions d'un processeur simple par
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="debug_8c.html">debug.c</a></li>
+    <li class="footer">Généré le Vendredi 13 Juin 2014 12:05:55 pour Simulateur du jeu d&#39;instructions d&#39;un processeur simple par
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
-   </ul>
- </div>
-
-
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

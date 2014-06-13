@@ -1,4 +1,4 @@
-digraph G
+digraph "error.h"
 {
   edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
   node [fontname="FreeSans",fontsize="10",shape=record];

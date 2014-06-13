@@ -1,7 +1,6 @@
 var test__simul_8c =
 [
     [ "main", "test__simul_8c.html#a0ddf1224851353fc92bfbff6f499fa97", null ],
-    [ "usage", "test__simul_8c.html#a64a6014565bb3e03294ec4a952d5add0", null ],
     [ "data", "test__simul_8c.html#a0a1a7765b8d407ad9c19649d5a9dd699", null ],
     [ "dataend", "test__simul_8c.html#ad74734ae58f284f6cc955dfecf50f0d0", null ],
     [ "datasize", "test__simul_8c.html#aaf62fcfcec5bdcaf147f70c32398ab32", null ],
